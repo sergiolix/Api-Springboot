@@ -17,15 +17,15 @@ import com.example.demo.services.zonaServices;
 public class zonaController {
 
     @Autowired()
-    zonaServices zonaServices;
+    zonaServices zonaService;
 
     @GetMapping()
     public ArrayList<zonaModel> obtenerZonas() {
-        return zonaServices.obtenerZonas();
+        return zonaService.obtenerZonas();
     }
 
     @PostMapping()
     public zonaModel guardarZonas(@RequestBody zonaModel zona) {
-        return this.zonaServices.guardarZonas(zona);
+        return this.zonaService.guardarZonas(zona);
     }
 }
