@@ -27,7 +27,7 @@ public class zonaServices {
         return zonaRepositorie.findById(id);
     }
 
-    public ArrayList<zonaModel> obtenerporciudad(String ubicacion) {
-        return zonaRepositorie.findbyUbicacion(ubicacion);
+    public ArrayList<zonaModel> obtenerbyubicacion(String ubicacion) {
+        return zonaRepositorie.findByUbicacion(ubicacion);
     }
 }

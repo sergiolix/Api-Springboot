@@ -9,5 +9,5 @@ import com.example.demo.models.zonaModel;
 
 @Repository
 public interface zonaRepositories extends CrudRepository<zonaModel, Long> {
-    public abstract ArrayList<zonaModel> findbyUbicacion(String ubicacion);
+    ArrayList<zonaModel> findByUbicacion(String ubicacion);
 }
